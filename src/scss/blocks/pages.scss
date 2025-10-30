@@ -1,0 +1,7 @@
+@use "../placeholders/block";
+@use "../placeholders/pages";
+
+.pages {
+  @extend %block;
+  @extend %pages;
+}

@@ -1,0 +1,23 @@
+@use "../mixins/icons-links";
+@use "../placeholders/block";
+@use "../placeholders/list";
+
+.jumpmarks {
+  @extend %block;
+  @extend %list;
+
+  &__heading {
+    display: block;
+    margin-bottom: var(--spacing-base);
+  }
+
+  // &__list {
+  //   list-style: none;
+  // }
+
+  // &__link {
+  //   &:before {
+  //     @include icons-links.icon("\e900");
+  //   }
+  // }
+}

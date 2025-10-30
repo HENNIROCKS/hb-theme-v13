@@ -1,0 +1,92 @@
+@use "../placeholders/block";
+@use "../placeholders/image";
+
+.gallery {
+  @extend %block;
+
+  &.gallery--masonry {
+    // https://piccalil.li/blog/a-simple-masonry-like-composable-layout/
+    --switcher-target-container-width: 28rem;
+
+    align-items: var(--switcher-vertical-alignment, flex-start);
+    background-color: var(--color-background-lightmode-muted);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    margin-inline: auto;
+    max-width: 80rem;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-background-darkmode-muted);
+    }
+
+    > * {
+      flex-grow: 1;
+      flex-basis: calc(
+        (var(--switcher-target-container-width, 40rem) - 100%) * 999
+      );
+    }
+
+    .gallery__column {
+      font-size: var(--text-base);
+
+      img {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  &.gallery--none {
+    img {
+      @extend %image;
+    }
+  }
+
+  &.gallery--scroll {
+    overflow: hidden;
+    position: relative;
+
+    .gallery__icon {
+      background-color: var(--color-background-lightmode);
+      bottom: 0;
+      height: calc(var(--text-base) + 2em);
+      margin: auto;
+      padding: 1em;
+      position: absolute;
+      top: 0;
+      width: calc(var(--text-base) + 2em);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: var(--color-background-darkmode);
+      }
+    }
+
+    .gallery__container {
+      background-color: var(--color-background-lightmode-muted);
+      overflow: auto;
+      padding: var(--spacing-base);
+      white-space: nowrap;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: var(--color-background-darkmode-muted);
+      }
+
+      @media (min-width: 1280px) {
+        max-width: 50vw;
+      }
+    }
+
+    img {
+      height: auto;
+      padding: var(--spacing-base);
+      width: 100%;
+
+      @media (min-width: 1280px) {
+        height: 50vh;
+        width: auto;
+      }
+    }
+  }
+}

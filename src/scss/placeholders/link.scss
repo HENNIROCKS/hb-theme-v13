@@ -1,0 +1,13 @@
+@use "../mixins/icons-links";
+
+%link {
+  a {
+    &:before {
+      @include icons-links.icon("\e901");
+    }
+
+    &[target="_blank"]:before {
+      content: "\e904";
+    }
+  }
+}

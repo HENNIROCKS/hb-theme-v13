@@ -1,0 +1,5 @@
+@use "../placeholders/block";
+
+.markdown {
+  @extend %block;
+}

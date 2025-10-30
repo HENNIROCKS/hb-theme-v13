@@ -1,0 +1,10 @@
+@use "../placeholders/block";
+@use "../placeholders/image";
+
+.image {
+  @extend %block;
+
+  img {
+    @extend %image;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../mixins/icons-links";
+@use "../placeholders/button";
+
+.button {
+  @extend %button;
+
+  &--download {
+    &:before {
+      @include icons-links.icon("\e910");
+    }
+  }
+
+  &--hexagon {
+    aspect-ratio: 1 / cos(30deg);
+    background-color: var(--color-background-darkmode-contrast);
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    color: var(--color-text-darkmode-contrast);
+    height: 150px;
+    letter-spacing: 2px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: calc(
+      150px * 1 / cos(30deg)
+    ); // Required for Safari: absolute position breaks the aspect ratio
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-background-lightmode-contrast);
+      color: var(--color-text-lightmode-contrast);
+    }
+  }
+
+  &--more {
+    margin-top: var(--spacing-large);
+
+    &:before {
+      @include icons-links.icon("\e921");
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "hb-theme-v13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "watch-styles": "sass --watch src/scss/index.scss assets/css/styles.css --style compressed",
+    "build-styles": "sass src/scss/index.scss assets/css/styles.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
