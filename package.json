@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "fslightbox": "^3.7.4",
     "sass": "^1.93.2"
   }
 }

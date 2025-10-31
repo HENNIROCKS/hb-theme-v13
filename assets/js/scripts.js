@@ -1,16 +1,4 @@
-// // Ensure Lightbox2 is included in your project
-// // Example: Add <script src="path/to/lightbox.js"></script> in your HTML file
-
-// if (typeof lightbox !== "undefined") {
-//   lightbox.option({
-//     // https://lokeshdhakar.com/projects/lightbox2/#options
-//     resizeDuration: 0,
-//   });
-// } else {
-//   console.error(
-//     "Lightbox is not defined. Ensure the Lightbox2 library is included."
-//   );
-// }
+import "fslightbox";
 
 // /* ++++++++++++++++++++ */
 
