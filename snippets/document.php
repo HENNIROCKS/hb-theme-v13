@@ -54,7 +54,7 @@ $theme = option('activeTheme');
         // '@auto'
         'media/plugins/' . $theme . '/js/vendors/fslightbox.js',
         'media/plugins/' . $theme . '/js/scripts.js',
-        // 'media/plugins/' . $theme . '/js/templates/' . $page->template()  . '.js',
+        'media/plugins/' . $theme . '/js/templates/' . $page->template()  . '.js',
     ]) ?>
 
 </body>
