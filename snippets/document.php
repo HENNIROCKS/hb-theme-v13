@@ -36,7 +36,7 @@ $theme = option('activeTheme');
         <?php snippet('banner') ?>
         <?php snippet('navigation-main') ?>
         <main class="main main--<?= $page->template() ?> __container">
-            <section class="section" __class="section section--text">
+            <section class="section">
                 <h1 class="heading heading--h1" id="<?= Str::slug($page->title()) ?>">
                     <?= $page->title() ?>
                 </h1>
