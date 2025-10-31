@@ -1,5 +1,6 @@
 @use "../placeholders/block";
 @use "../placeholders/image";
+@use "../placeholders/link";
 
 .gallery {
   @extend %block;
@@ -74,7 +75,7 @@
       }
 
       @media (min-width: 1280px) {
-        max-width: 50vw;
+        max-width: calc(50vw - calc(var(--spacing-base) * 2));
       }
     }
 
@@ -88,5 +89,10 @@
         width: auto;
       }
     }
+  }
+
+  .gallery__caption {
+    @extend %link;
+    margin-top: var(--spacing-small);
   }
 }
