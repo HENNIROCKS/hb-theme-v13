@@ -3,11 +3,12 @@
 .stoerer {
   @extend %link;
   background-color: var(--color-background-lightmode-muted);
-  bottom: 0;
+  border-radius: var(--radius-small);
+  bottom: 5px;
   font-size: 0.75rem;
   padding: var(--spacing-small);
   position: fixed;
-  right: 0;
+  right: 5px;
 
   @media (prefers-color-scheme: dark) {
     background-color: var(--color-background-darkmode-muted);
