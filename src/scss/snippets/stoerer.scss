@@ -1,0 +1,15 @@
+@use "../placeholders/link";
+
+.stoerer {
+  @extend %link;
+  background-color: var(--color-background-lightmode-muted);
+  bottom: 0;
+  font-size: 0.75rem;
+  padding: var(--spacing-small);
+  position: fixed;
+  right: 0;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-background-darkmode-muted);
+  }
+}

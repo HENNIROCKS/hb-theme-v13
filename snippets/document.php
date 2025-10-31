@@ -49,6 +49,8 @@ $theme = option('activeTheme');
 
     <?php endif ?>
 
+    <?php snippet('stoerer') ?>
+
     <?= js([
         // 'assets/js/scripts.js',
         // '@auto'
