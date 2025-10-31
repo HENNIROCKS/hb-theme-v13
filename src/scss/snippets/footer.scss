@@ -1,7 +1,5 @@
 @use "../placeholders/container";
-@use "../placeholders/line";
 @use "../placeholders/link";
-@use "../variables/patterns";
 
 .footer {
   &__top {
@@ -39,30 +37,6 @@
     gap: var(--spacing-base);
     list-style: none;
 
-    &--pages {
-      align-items: center;
-      flex-direction: column;
-      position: relative;
-
-      @media (min-width: 768px) {
-        align-items: baseline;
-        flex-direction: row;
-      }
-
-      &:before {
-        @extend %line;
-        content: none;
-        left: 0;
-        margin: calc(calc(var(--spacing-medium) - 2px) * -1) auto 0;
-        position: absolute;
-        right: 0;
-
-        @media (min-width: 768px) {
-          content: "";
-        }
-      }
-    }
-
     &--icons {
       font-size: 1.5em;
       margin: 0 0 var(--spacing-base) 0;
@@ -80,13 +54,6 @@
       // color: var(--color-link);
       font-weight: var(--text-bold);
     }
-
-    .footer__badge {
-      background-color: var(--color-stone-300);
-      border-radius: var(--radius-tiny);
-      color: var(--color-stone-700);
-      padding: 0 3px;
-    }
   }
 
   &__bottom {
@@ -102,14 +69,6 @@
 
     @media (min-width: 768px) {
       padding: var(--spacing-larger) 0;
-    }
-
-    .footer__link {
-      background-color: var(--color-background-lightmode);
-
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--color-background-darkmode);
-      }
     }
   }
 }

@@ -24,20 +24,7 @@ $text = $site->footertext()->or('Made with Kirby and <i class="icon icon__heart"
     </div>
 
     <div class="footer__bottom">
-        <ol class="footer__list footer__list--pages">
-            <?php foreach (collection('pages-published') as $page): ?>
-                <li class="footer__list-item">
-                    <a class="footer__link<?php e($page->isOpen(), ' footer__link--active') ?>" href="<?= $page->url() ?>" title="<?php /* echo I18n::template('link.title.topage', null, ['page' => $page->title()]) */ ?>">
-                        <?= $page->title() ?>
-                        <?php if ($page->hasChildren()) : ?>
-                            <span class="footer__badge">
-                                <?= $page->children()->count() ?>
-                            </span>
-                        <?php endif ?>
-                    </a>
-                </li>
-            <?php endforeach ?>
-        </ol>
+        <?php snippet('navigation-footer') ?>
     </div>
 
 </footer>
