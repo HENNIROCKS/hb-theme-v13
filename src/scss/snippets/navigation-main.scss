@@ -53,23 +53,32 @@
       }
 
       &-item {
-        border-bottom: 1px solid transparent;
-        border-top: 1px solid transparent;
+        border-bottom: 1px dashed var(--color-text-lightmode);
+        border-top: 1px dashed var(--color-text-lightmode);
         margin: -1px 0;
+
+        @media (prefers-color-scheme: dark) {
+          border-color: var(--color-text-darkmode-muted);
+        }
+
+        @media (min-width: 768px) {
+          border-bottom-color: transparent;
+          border-top-color: transparent;
+        }
 
         &:focus,
         &:hover {
-          border-bottom-color: var(--color-link);
-          border-top-color: var(--color-link);
+          border-bottom: 1px solid var(--color-link);
+          border-top: 1px solid var(--color-link);
         }
 
         &--active {
-          border-bottom-color: var(--color-text-lightmode);
-          border-top-color: var(--color-text-lightmode);
+          border-bottom: 1px solid var(--color-text-lightmode);
+          border-top: 1px solid var(--color-text-lightmode);
 
           @media (prefers-color-scheme: dark) {
-            border-bottom-color: var(--color-text-darkmode-muted);
-            border-top-color: var(--color-text-darkmode-muted);
+            border-bottom: 1px solid var(--color-text-darkmode-muted);
+            border-top: 1px solid var(--color-text-darkmode-muted);
           }
         }
       }
