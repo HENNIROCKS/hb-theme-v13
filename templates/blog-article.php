@@ -9,9 +9,7 @@
 <?php snippet('document', slots: true) ?>
 <?php slot() ?>
 
-<div class="page__infos container">
-    <?= $page->date()->toDate('d. MMMM YYYY') ?>
-</div>
+<?php /* echo $page->date()->toDate('d. MMMM YYYY') */ ?>
 
 <?php snippet('layouts', ['layout_src' => $page->layouts()]) ?>
 
