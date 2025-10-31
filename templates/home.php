@@ -17,7 +17,7 @@ $textButton = $page->homeTextButton();
 <main class="home">
     <div class="home__left">
         <?php if ($textLeft->isNotEmpty()): ?>
-            <span><?= $textLeft->kt() ?></span>
+            <div><?= $textLeft->kt() ?></div>
         <?php else: ?>
             <?= $site->title() ?>
         <?php endif ?>
