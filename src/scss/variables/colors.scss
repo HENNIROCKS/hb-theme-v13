@@ -2,6 +2,7 @@
   --color-black-base: #000000;
   --color-stone-base: #79716b;
   --color-petrol-base: #01606a;
+  --color-salmon-base: #ff8c69;
   --color-tomato-base: #ff6448;
   --color-yellow-base: #fbc90c;
   --color-white-base: #ffffff;
@@ -24,7 +25,7 @@
   --color-text-lightmode-muted: var(--color-stone-200);
   --color-text-lightmode-vivid: var();
 
-  --color-link: var(--color-tomato-500);
+  --color-link: var(--color-salmon-500);
 
   /*
   Lightened color:
@@ -78,6 +79,18 @@
   --color-petrol-800: hsl(from var(--color-petrol-base) h s calc(l - 20));
   --color-petrol-900: hsl(from var(--color-petrol-base) h s calc(l - 25));
   --color-petrol-950: hsl(from var(--color-petrol-base) h s calc(l - 30));
+
+  --color-salmon-50: hsl(from var(--color-salmon-base) h s calc(l + 30));
+  --color-salmon-100: hsl(from var(--color-salmon-base) h s calc(l + 25));
+  --color-salmon-200: hsl(from var(--color-salmon-base) h s calc(l + 20));
+  --color-salmon-300: hsl(from var(--color-salmon-base) h s calc(l + 15));
+  --color-salmon-400: hsl(from var(--color-salmon-base) h s calc(l + 10));
+  --color-salmon-500: hsl(from var(--color-salmon-base) h s calc(l + 0));
+  --color-salmon-600: hsl(from var(--color-salmon-base) h s calc(l - 10));
+  --color-salmon-700: hsl(from var(--color-salmon-base) h s calc(l - 15));
+  --color-salmon-800: hsl(from var(--color-salmon-base) h s calc(l - 20));
+  --color-salmon-900: hsl(from var(--color-salmon-base) h s calc(l - 25));
+  --color-salmon-950: hsl(from var(--color-salmon-base) h s calc(l - 30));
 
   --color-tomato-50: hsl(from var(--color-tomato-base) h s calc(l + 30));
   --color-tomato-100: hsl(from var(--color-tomato-base) h s calc(l + 25));
