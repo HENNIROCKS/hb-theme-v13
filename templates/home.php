@@ -24,7 +24,7 @@ $textButton = $page->homeTextButton();
     </div>
     <div class="home__right">
         <?php if ($textRight->isNotEmpty()): ?>
-            <div class="home__text" style="font-size: var(--text-base); width: 50%">
+            <div class="home__text">
                 <?= $textRight->kt() ?>
             </div>
         <?php else: ?>

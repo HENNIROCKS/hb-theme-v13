@@ -69,4 +69,13 @@
     @extend .button;
     @extend .button--hexagon;
   }
+
+  &__text {
+    font-size: var(--text-base);
+    width: calc(100% - calc(var(--spacing-base) * 4));
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
 }
