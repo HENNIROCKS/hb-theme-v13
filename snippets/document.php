@@ -55,11 +55,7 @@ $theme = option('activeTheme');
 
     <?php snippet('stoerer') ?>
 
-    <?= js([
-        'media/plugins/' . $theme . '/js/vendors/fslightbox.js',
-        'media/plugins/' . $theme . '/js/scripts.js',
-        // 'media/plugins/' . $theme . '/js/templates/' . $page->template()  . '.js',
-    ]) ?>
+    <?= js('media/plugins/' . $theme . '/js/script.min.js') ?>
 
 </body>
 
