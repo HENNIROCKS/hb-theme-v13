@@ -56,8 +56,6 @@ $theme = option('activeTheme');
     <?php snippet('stoerer') ?>
 
     <?= js([
-        // 'assets/js/scripts.js',
-        // '@auto'
         'media/plugins/' . $theme . '/js/vendors/fslightbox.js',
         'media/plugins/' . $theme . '/js/scripts.js',
         // 'media/plugins/' . $theme . '/js/templates/' . $page->template()  . '.js',

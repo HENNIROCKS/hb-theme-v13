@@ -80,7 +80,9 @@ $variant = $block->variant();
 <?php else: ?>
 	<div class="gallery gallery--none">
 		<?php foreach ($block->images()->toFiles() as $image): ?>
-			<?= $image ?>
+			<a data-fslightbox href="<?= $image->url() ?>">
+				<?= $image ?>
+			</a>
 		<?php endforeach ?>
 		<?php if ($caption->isNotEmpty()): ?>
 			<div class="gallery__caption">
