@@ -1,5 +1,7 @@
 <?php
 
+use Kirby\Toolkit\Str;
+
 /**
  * @var Kirby\Cms\Page $page
  */
@@ -24,7 +26,15 @@
 </div>
 */ ?>
 
-<?php snippet('articles/articles', ['articles' => $articles, 'class' => 'blog']) ?>
+<main class="main main--<?= $page->template() ?> __container">
+    <section class="section">
+        <h1 class="heading heading--h1" id="<?= Str::slug($page->title()) ?>">
+            <?= $page->title() ?>
+        </h1>
+        <hr class="line" />
+        <?php snippet('articles/articles', ['articles' => $articles, 'class' => 'blog']) ?>
+    </section>
+</main>
 
 <?php endslot() ?>
 <?php endsnippet() ?>

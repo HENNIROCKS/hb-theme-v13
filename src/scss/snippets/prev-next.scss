@@ -1,0 +1,15 @@
+.prev-next {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-base);
+
+  &__placeholder {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .icon {
+    font-size: 2em;
+  }
+}

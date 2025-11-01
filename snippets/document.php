@@ -2,7 +2,7 @@
 
 <?php
 
-use Kirby\Toolkit\Str;
+// use Kirby\Toolkit\Str;
 
 /**
  * @var \Kirby\Cms\App $kirby
@@ -35,7 +35,10 @@ $theme = option('activeTheme');
 
         <?php snippet('banner') ?>
         <?php snippet('navigation-main') ?>
-        <main class="main main--<?= $page->template() ?> __container">
+
+        <?= $slot ?>
+
+        <?php /* <main class="main main--<?= $page->template() ?> __container">
             <section class="section">
                 <h1 class="heading heading--h1" id="<?= Str::slug($page->title()) ?>">
                     <?= $page->title() ?>
@@ -43,7 +46,8 @@ $theme = option('activeTheme');
                 <hr class="line" />
                 <?= $slot ?>
             </section>
-        </main>
+        </main> */ ?>
+
         <?php snippet('scrolltop') ?>
         <?php snippet('footer') ?>
 

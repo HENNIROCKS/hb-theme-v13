@@ -17,7 +17,7 @@ use Kirby\Toolkit\Str;
             <?= $page->title() ?>
         </h1>
 
-        <?php snippet('prev-next', ['showDate' => true, 'showTags' => false]) ?>
+        <?php snippet('prev-next', ['showDate' => false, 'showTags' => true]) ?>
 
         <hr class="line" />
         <?php snippet('layouts', ['layout_src' => $page->layouts()]) ?>
