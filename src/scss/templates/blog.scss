@@ -1,5 +1,7 @@
 @use "../placeholders/articles";
 
-.articles {
-  @extend %articles;
+.main--blog {
+  .articles {
+    @extend %articles;
+  }
 }

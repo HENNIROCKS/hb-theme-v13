@@ -2,15 +2,17 @@
 @use "../placeholders/articles";
 @use "../placeholders/button";
 
-.articles {
-  @extend %articles;
+.main--portfolio {
+  .articles {
+    @extend %articles;
 
-  &__button {
-    @extend %button;
-    margin: var(--spacing-large) 0;
+    &__button {
+      @extend %button;
+      margin: var(--spacing-large) 0;
 
-    &:before {
-      @include icons-links.icon("\e921");
+      &:before {
+        @include icons-links.icon("\e921");
+      }
     }
   }
 }
