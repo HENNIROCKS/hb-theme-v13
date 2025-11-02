@@ -5,6 +5,7 @@
   background-color: var(--color-background-lightmode-muted);
   border-radius: var(--radius-small);
   bottom: 5px;
+  display: none;
   font-size: 0.75rem;
   padding: var(--spacing-small);
   position: fixed;
@@ -12,5 +13,9 @@
 
   @media (prefers-color-scheme: dark) {
     background-color: var(--color-background-darkmode-muted);
+  }
+
+  @media (min-width: 768px) {
+    display: block;
   }
 }
