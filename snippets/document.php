@@ -1,5 +1,3 @@
-<?= $site->hiddenmessage() ?>
-
 <?php
 
 // use Kirby\Toolkit\Str;
