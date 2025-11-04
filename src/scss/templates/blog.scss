@@ -1,39 +1,58 @@
-@use "../placeholders/image";
+// @use "../placeholders/image";
+
+// .main--blog {
+//   .articles {
+//     &__list {
+//       display: flex;
+//       flex-direction: column;
+//       gap: var(--spacing-large);
+//     }
+
+//     &__preview {
+//       border-radius: var(--radius-base);
+//       border: 1px solid var(--color-text-lightmode);
+
+//       @media (prefers-color-scheme: dark) {
+//         border-color: var(--color-text-darkmode-muted);
+//       }
+//     }
+
+//     &__link {
+//       @media (min-width: 768px) {
+//         display: flex;
+//         justify-content: space-between;
+//       }
+//     }
+
+//     &__image {
+//       @extend %image;
+//       border-bottom-left-radius: var(--radius-base);
+//       border-top-left-radius: var(--radius-base);
+//     }
+
+//     &__title {
+//       display: inline-flex;
+//       padding: var(--spacing-base);
+//       width: 100%;
+//     }
+//   }
+// }
+
+@use "../mixins/icons-links";
+@use "../placeholders/articles";
+@use "../placeholders/button";
 
 .main--blog {
   .articles {
-    &__list {
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-large);
-    }
+    @extend %articles;
 
-    &__preview {
-      border-radius: var(--radius-base);
-      border: 1px solid var(--color-text-lightmode);
+    &__button {
+      @extend %button;
+      margin: var(--spacing-large) 0;
 
-      @media (prefers-color-scheme: dark) {
-        border-color: var(--color-text-darkmode-muted);
+      &:before {
+        @include icons-links.icon("\e921");
       }
-    }
-
-    &__link {
-      @media (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-
-    &__image {
-      @extend %image;
-      border-bottom-left-radius: var(--radius-base);
-      border-top-left-radius: var(--radius-base);
-    }
-
-    &__title {
-      display: inline-flex;
-      padding: var(--spacing-base);
-      width: 100%;
     }
   }
 }

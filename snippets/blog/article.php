@@ -12,10 +12,6 @@
                 <br>
                 <?= $article->date()->toDate('d. MMMM YYYY') ?>
             <?php endif ?>
-
-            <?php /* if ($article->tags()): ?>
-                <?php snippet('tags', ['page' => $article]) ?>
-            <?php endif */ ?>
         </span>
 
     </a>
