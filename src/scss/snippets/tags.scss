@@ -7,33 +7,11 @@
   margin-bottom: var(--spacing-large);
   position: relative;
 
-  // &:before {
-  //   background-color: var(--color-text-lightmode);
-  //   content: "";
-  //   height: 1px;
-  //   position: absolute;
-  //   top: calc(var(--text-base) / 1.4);
-  //   width: 100%;
-  //   z-index: -1;
-
-  //   @media (prefers-color-scheme: dark) {
-  //     background-color: var(--color-text-darkmode);
-  //   }
-  // }
-
   &__link {
     @extend %button;
+    align-items: center;
     display: flex;
     padding: 0 3px;
-
-    &:before {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M7.78428 14L8.2047 10H4V8H8.41491L8.94043 3H10.9514L10.4259 8H14.4149L14.9404 3H16.9514L16.4259 8H20V10H16.2157L15.7953 14H20V16H15.5851L15.0596 21H13.0486L13.5741 16H9.58509L9.05957 21H7.04855L7.57407 16H4V14H7.78428ZM9.7953 14H13.7843L14.2047 10H10.2157L9.7953 14Z'%3E%3C/path%3E%3C/svg%3E");
-      background-position: center;
-      background-repeat: no-repeat;
-      content: "";
-      font-size: 1em;
-      width: 1em;
-    }
 
     &--disabled {
       cursor: default;
