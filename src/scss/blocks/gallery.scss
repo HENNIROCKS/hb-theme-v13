@@ -46,6 +46,7 @@
   }
 
   &.gallery--scroll {
+    display: grid;
     overflow: hidden;
     position: relative;
 

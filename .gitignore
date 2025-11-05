@@ -1,5 +1,7 @@
 .DS_Store
-/assets/*.min.*
+assets/css/style.min.css
+assets/css/style.min.css.map
+assets/js/script.min.js
 /node_modules/*
 Icon
 __*
