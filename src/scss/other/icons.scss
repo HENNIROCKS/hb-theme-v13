@@ -11,7 +11,7 @@
   vertical-align: middle;
 
   &:before {
-    content: "x"; // Temporary; if no icon is defined, yet
+    content: "x";
   }
 }
 
@@ -75,64 +75,67 @@
 .icon__gitlab:before {
   content: "\e913";
 }
-.icon__heart:before {
-  color: var(--color-salmon-500);
+.icon__hashtag:before {
   content: "\e914";
 }
-.icon__linkedin:before {
+.icon__heart:before {
+  color: var(--color-salmon-500);
   content: "\e915";
 }
-.icon__lock-closed:before {
+.icon__linkedin:before {
   content: "\e916";
 }
-.icon__lock-open:before {
+.icon__lock-closed:before {
   content: "\e917";
 }
-.icon__login:before {
+.icon__lock-open:before {
   content: "\e918";
 }
-.icon__logout:before {
+.icon__login:before {
   content: "\e919";
 }
-.icon__mail:before {
+.icon__logout:before {
   content: "\e91a";
 }
-.icon__mastodon:before {
+.icon__mail:before {
   content: "\e91b";
 }
-.icon__menu:before {
+.icon__mastodon:before {
   content: "\e91c";
 }
-.icon__minus:before {
+.icon__menu:before {
   content: "\e91d";
 }
-.icon__paypal:before {
+.icon__minus:before {
   content: "\e91e";
 }
-.icon__pinterest:before {
+.icon__paypal:before {
   content: "\e91f";
 }
-.icon__pixelfed:before {
+.icon__pinterest:before {
   content: "\e920";
 }
-.icon__plus:before {
+.icon__pixelfed:before {
   content: "\e921";
 }
-.icon__reddit:before {
+.icon__plus:before {
   content: "\e922";
 }
-.icon__signal:before {
+.icon__reddit:before {
   content: "\e923";
 }
-.icon__spotify:before {
+.icon__signal:before {
   content: "\e924";
 }
-.icon__steam:before {
+.icon__spotify:before {
   content: "\e925";
 }
-.icon__xing:before {
+.icon__steam:before {
   content: "\e926";
 }
-.icon__youtube:before {
+.icon__xing:before {
   content: "\e927";
+}
+.icon__youtube:before {
+  content: "\e928";
 }

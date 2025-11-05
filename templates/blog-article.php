@@ -19,7 +19,10 @@ use Kirby\Toolkit\Str;
 
         <?php snippet('prev-next', ['showDate' => true, 'showTags' => false]) ?>
 
-        <hr class="line" />
+        <hr class=" line" />
+
+        <?php snippet('tags', ['disabled' => true]) ?>
+
         <?php snippet('layouts', ['layout_src' => $page->layouts()]) ?>
     </section>
 </main>

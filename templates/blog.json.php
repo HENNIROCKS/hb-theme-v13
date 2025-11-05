@@ -2,7 +2,7 @@
 
 foreach ($articles as $article) {
 
-    $html .= snippet('articles/article', ['article' => $article, 'class' => 'blog-article'], true);
+    $html .= snippet('blog/article', ['article' => $article, 'class' => 'blog-article'], true);
 }
 
 $json['html'] = $html;
