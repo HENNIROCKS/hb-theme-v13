@@ -1,18 +1,5 @@
-@use "../mixins/icons-links";
-@use "../placeholders/articles";
-@use "../placeholders/button";
+@use "../mixins/articles";
 
 .main--portfolio {
-  .articles {
-    @extend %articles;
-
-    &__button {
-      @extend %button;
-      margin: var(--spacing-large) 0;
-
-      &:before {
-        @include icons-links.icon("\e921");
-      }
-    }
-  }
+  @include articles.articles("");
 }

@@ -1,13 +1,26 @@
-<article class="articles__preview">
-    <a class="articles__link" href="<?= $article->url() ?>" title='Link zu "<?= $article->title() ?>"'>
+<?php
 
-        <?php if ($image = $article->previewimage()->toFile() ?? $article->images()->first()): ?>
-            <img alt="" class="articles__image" src="<?= $image->crop(640, 250, 80)->url() ?>" />
-        <?php endif ?>
+/**
+ * 
+ */
 
-        <span class="articles__title">
-            <?= $article->title() ?>
-        </span>
+$url          = $article->url();
+$title        = $article->title();
+$previewImage = $article->previewimage()->toFile();
+$firstImage   = $article->images()->first();
 
-    </a>
+?>
+
+<article class="article__preview">
+
+    <a class="article__link" href="<?= $url ?>" title='Link zu "<?= $title ?>"'></a>
+
+    <?php if ($image = $previewImage ?? $firstImage): ?>
+        <img alt="<?= $image->alt() ?>" class="article__image" src="<?= $image->crop(640, 250, 80)->url() ?>" />
+    <?php endif ?>
+
+    <h3 class="article__title">
+        <?= $title ?>
+    </h3>
+
 </article>
