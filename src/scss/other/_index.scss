@@ -8,3 +8,9 @@
 @use "sr-only";
 
 // @use "icons";
+
+@use "../mixins/icon";
+
+.icon--heart {
+  @include icon.icon("heart");
+}
