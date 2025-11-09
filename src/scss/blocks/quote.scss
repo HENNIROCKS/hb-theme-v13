@@ -1,4 +1,5 @@
-@use "../other/icons";
+@use "../mixins/icon";
+// @use "../other/icons";
 @use "../placeholders/block";
 
 .quote {
@@ -8,25 +9,49 @@
   &__text {
     font-size: 2em;
 
-    &:before,
     &:after {
-      @extend .icon;
-      color: var(--color-text-darkmode-muted);
-      display: inline-block;
-
-      @media (prefers-color-scheme: dark) {
-        color: var(--color-text-lightmode-muted);
-      }
+      @include icon.icon("chevron-right-double");
     }
 
     &:before {
-      content: "\e90c";
+      @include icon.icon("chevron-left-double");
     }
 
-    &:after {
-      content: "\e90a";
-    }
+    // &:before,
+    // &:after {
+    //   @extend .icon;
+    //   color: var(--color-text-darkmode-muted);
+    //   display: inline-block;
+
+    //   @media (prefers-color-scheme: dark) {
+    //     color: var(--color-text-lightmode-muted);
+    //   }
+    // }
+
+    // &:before {
+    //   content: "\e90c"; // chevron-right-double
+    // }
+
+    // &:after {
+    //   content: "\e90a"; // chevron-left-double
+    // }
   }
+
+  // &__icon {
+  //   color: var(--color-text-darkmode-muted);
+
+  //   @media (prefers-color-scheme: dark) {
+  //     color: var(--color-text-lightmode-muted);
+  //   }
+
+  //   &--chevron-right-double {
+  //     @include icon.icon("chevron-right-double");
+  //   }
+
+  //   &--chevron-left-double {
+  //     @include icon.icon("chevron-left-double");
+  //   }
+  // }
 
   &__footer {
     margin-top: var(--spacing-base);

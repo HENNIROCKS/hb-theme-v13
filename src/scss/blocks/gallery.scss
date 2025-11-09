@@ -1,3 +1,4 @@
+@use "../mixins/icon";
 @use "../placeholders/block";
 @use "../placeholders/image";
 @use "../placeholders/link";
@@ -48,7 +49,6 @@
   &.gallery--scroll {
     display: grid;
     overflow: hidden;
-    position: relative;
 
     .gallery__icon {
       background-color: var(--color-background-lightmode);
@@ -63,20 +63,31 @@
       @media (prefers-color-scheme: dark) {
         background-color: var(--color-background-darkmode);
       }
+
+      &--arrow-left-right {
+        @include icon.icon("arrow-left-right");
+      }
     }
 
     .gallery__container {
-      background-color: var(--color-background-lightmode-muted);
-      overflow: auto;
-      padding: var(--spacing-base);
-      white-space: nowrap;
-
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--color-background-darkmode-muted);
+      &--outer {
+        background-color: var(--color-background-lightmode-muted);
+        position: relative;
       }
 
-      @media (min-width: 1280px) {
-        max-width: calc(55vw - calc(var(--spacing-base) * 2));
+      &--inner {
+        font-size: 0;
+        overflow: auto;
+        padding: var(--spacing-base);
+        white-space: nowrap;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: var(--color-background-darkmode-muted);
+        }
+
+        @media (min-width: 1280px) {
+          max-width: calc(55vw - calc(var(--spacing-base) * 2));
+        }
       }
     }
 

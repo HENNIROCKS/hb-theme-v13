@@ -1,0 +1,197 @@
+@mixin icon($icon) {
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // font-family: "remix" !important;
+  // font-style: normal;
+  // font-variant: normal;
+  // font-weight: normal;
+  // line-height: 1;
+  // // margin-right: 3px;
+  // speak: never;
+  // text-transform: none;
+  // vertical-align: middle;
+
+  &:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "remix" !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: never;
+    text-transform: none;
+    vertical-align: middle;
+
+    content: "x";
+
+    @if $icon == "anchor" {
+      content: "\e900";
+    }
+
+    @if $icon == "arrow-left-right" {
+      content: "\e901";
+    }
+
+    @if $icon == "arrow-right" {
+      content: "\e902";
+    }
+
+    @if $icon == "arrow-right-box" {
+      content: "\e903";
+    }
+
+    @if $icon == "arrow-right-box-black" {
+      content: "\e904";
+    }
+
+    @if $icon == "arrow-right-up" {
+      content: "\e905";
+    }
+
+    @if $icon == "arrow-right-up-box" {
+      content: "\e906";
+    }
+
+    @if $icon == "arrow-right-up-box-black" {
+      content: "\e907";
+    }
+
+    @if $icon == "behance" {
+      content: "\e908";
+    }
+
+    @if $icon == "bluesky" {
+      content: "\e909";
+    }
+
+    @if $icon == "chevron-left" {
+      content: "\e90a";
+    }
+
+    @if $icon == "chevron-left-double" {
+      content: "\e90b";
+    }
+
+    @if $icon == "chevron-right" {
+      content: "\e90c";
+    }
+
+    @if $icon == "chevron-right-double" {
+      content: "\e90d";
+    }
+
+    @if $icon == "close" {
+      content: "\e90e";
+    }
+
+    @if $icon == "code" {
+      content: "\e90f";
+    }
+
+    @if $icon == "discord" {
+      content: "\e910";
+    }
+
+    @if $icon == "download" {
+      content: "\e911";
+    }
+
+    @if $icon == "feed" {
+      content: "\e912";
+    }
+
+    @if $icon == "github" {
+      content: "\e913";
+    }
+
+    @if $icon == "gitlab" {
+      content: "\e914";
+    }
+
+    @if $icon == "hashtag" {
+      content: "\e915";
+    }
+
+    @if $icon == "heart" {
+      color: var(--color-salmon-500);
+      content: "\e916";
+    }
+
+    @if $icon == "linkedin" {
+      content: "\e917";
+    }
+
+    @if $icon == "lock-closed" {
+      content: "\e918";
+    }
+
+    @if $icon == "lock-open" {
+      content: "\e919";
+    }
+
+    @if $icon == "login" {
+      content: "\e91a";
+    }
+
+    @if $icon == "logout" {
+      content: "\e91b";
+    }
+
+    @if $icon == "mail" {
+      content: "\e91c";
+    }
+
+    @if $icon == "mastodon" {
+      content: "\e91d";
+    }
+
+    @if $icon == "menu" {
+      content: "\e91e";
+    }
+
+    @if $icon == "minus" {
+      content: "\e91f";
+    }
+
+    @if $icon == "paypal" {
+      content: "\e920";
+    }
+
+    @if $icon == "pinterest" {
+      content: "\e921";
+    }
+
+    @if $icon == "pixelfed" {
+      content: "\e922";
+    }
+
+    @if $icon == "plus" {
+      content: "\e923";
+    }
+
+    @if $icon == "reddit" {
+      content: "\e924";
+    }
+
+    @if $icon == "signal" {
+      content: "\e925";
+    }
+
+    @if $icon == "spotify" {
+      content: "\e926";
+    }
+
+    @if $icon == "steam" {
+      content: "\e927";
+    }
+
+    @if $icon == "xing" {
+      content: "\e928";
+    }
+
+    @if $icon == "youtube" {
+      content: "\e929";
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@use "../mixins/icon";
 @use "../placeholders/button";
 
 .tags {
@@ -27,5 +28,9 @@
         }
       }
     }
+  }
+
+  &__icon--hashtag {
+    @include icon.icon("hashtag");
   }
 }

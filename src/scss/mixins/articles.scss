@@ -1,6 +1,7 @@
 @use "../placeholders/button";
 @use "../placeholders/image";
-@use "icons-links";
+@use "icon";
+// @use "icons-links";
 
 @mixin articles($option) {
   .articles {
@@ -19,11 +20,12 @@
     @if $option == "hasButton" {
       &__button {
         @extend %button;
+        @include icon.icon("plus");
         margin: var(--spacing-large) 0;
 
-        &:before {
-          @include icons-links.icon("\e922");
-        }
+        // &:before {
+        //   @include icons-links.icon("\e922");
+        // }
       }
     }
   }
@@ -35,7 +37,7 @@
       border: 1px solid var(--color-text-lightmode);
       display: flex;
       flex-direction: column;
-      justify-content: end;
+      justify-content: space-between;
       position: relative;
 
       @media (prefers-color-scheme: dark) {
