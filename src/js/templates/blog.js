@@ -1,17 +1,18 @@
-const element = document.querySelector(".js-articles");
-const button = document.querySelector(".js-more");
+export function loadMoreArticles() {
+  const element = document.querySelector(".js-articles");
+  const button = document.querySelector(".js-more");
 
-// Nur ausführen wenn die Elemente existieren
-if (element && button) {
+  if (!element || !button) return;
+
   let page = parseInt(element.getAttribute("data-page"));
 
-  // Initial verstecken wenn keine weiteren Seiten verfügbar sind
   if (!page) {
     button.classList.add("hidden");
   }
 
   const fetchArticles = async () => {
-    if (!page) return; // Wenn keine weiteren Seiten verfügbar sind
+    if (!page) return;
+
     let url = `${window.location.href.split("#")[0]}.json/page:${page}`;
 
     try {
