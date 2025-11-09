@@ -17,10 +17,16 @@ use Kirby\Toolkit\Str;
             <?= $page->title() ?>
         </h1>
         <hr class="line" />
+
         <?php if ($page->text()->isNotEmpty()): ?>
             <?php snippet('blocks/text', ['block' => $page]) ?>
         <?php endif ?>
-        <?php snippet('blog/articles', ['articles' => $articles]) ?>
+
+        <?php if ($page->pinned()->isNotEmpty()): ?>
+            <?php snippet('blog/articles', ['articles' => $page->pinned()->toPages(), 'ajax' => false, 'class' => 'pinned']) ?>
+        <?php endif ?>
+
+        <?php snippet('blog/articles', ['articles' => $articles, 'ajax' => true, 'class' => 'default']) ?>
     </section>
 </main>
 
