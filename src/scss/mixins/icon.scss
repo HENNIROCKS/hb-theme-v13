@@ -15,6 +15,10 @@
       content: "\e901";
     }
 
+    @if $icon == "arrow-down-wide" {
+      content: "\e900";
+    }
+
     @if $icon == "arrow-left-right" {
       content: "\e902";
     }
@@ -52,136 +56,140 @@
     }
 
     @if $icon == "check" {
-      content: "\e900";
-    }
-
-    @if $icon == "chevron-left" {
       content: "\e90b";
     }
 
-    @if $icon == "chevron-left-double" {
+    @if $icon == "chevron-left" {
       content: "\e90c";
     }
 
-    @if $icon == "chevron-right" {
+    @if $icon == "chevron-left-double" {
       content: "\e90d";
     }
 
-    @if $icon == "chevron-right-double" {
+    @if $icon == "chevron-right" {
       content: "\e90e";
     }
 
-    @if $icon == "close" {
+    @if $icon == "chevron-right-double" {
       content: "\e90f";
     }
 
-    @if $icon == "code" {
+    @if $icon == "close" {
       content: "\e910";
     }
 
-    @if $icon == "discord" {
+    @if $icon == "code" {
       content: "\e911";
     }
 
-    @if $icon == "download" {
+    @if $icon == "discord" {
       content: "\e912";
     }
 
-    @if $icon == "feed" {
+    @if $icon == "download" {
       content: "\e913";
     }
 
-    @if $icon == "github" {
+    @if $icon == "feed" {
       content: "\e914";
     }
 
-    @if $icon == "gitlab" {
+    @if $icon == "github" {
       content: "\e915";
     }
 
-    @if $icon == "hashtag" {
+    @if $icon == "gitlab" {
       content: "\e916";
+    }
+
+    @if $icon == "hashtag" {
+      content: "\e917";
     }
 
     @if $icon == "heart" {
       color: var(--color-salmon-500);
-      content: "\e917";
-    }
-
-    @if $icon == "linkedin" {
       content: "\e918";
     }
 
-    @if $icon == "lock-closed" {
+    @if $icon == "linkedin" {
       content: "\e919";
     }
 
-    @if $icon == "lock-open" {
+    @if $icon == "lock-closed" {
       content: "\e91a";
     }
 
-    @if $icon == "login" {
+    @if $icon == "lock-open" {
       content: "\e91b";
     }
 
-    @if $icon == "logout" {
+    @if $icon == "login" {
       content: "\e91c";
     }
 
-    @if $icon == "mail" {
+    @if $icon == "logout" {
       content: "\e91d";
     }
 
-    @if $icon == "mastodon" {
+    @if $icon == "mail" {
       content: "\e91e";
     }
 
-    @if $icon == "menu" {
+    @if $icon == "mastodon" {
       content: "\e91f";
     }
 
-    @if $icon == "minus" {
+    @if $icon == "menu" {
       content: "\e920";
     }
 
-    @if $icon == "paypal" {
+    @if $icon == "minus" {
       content: "\e921";
     }
 
-    @if $icon == "pinterest" {
+    @if $icon == "paypal" {
       content: "\e922";
     }
 
-    @if $icon == "pixelfed" {
+    @if $icon == "pinterest" {
       content: "\e923";
     }
 
-    @if $icon == "plus" {
+    @if $icon == "pixelfed" {
       content: "\e924";
     }
 
-    @if $icon == "reddit" {
+    @if $icon == "plus" {
       content: "\e925";
     }
 
-    @if $icon == "signal" {
+    @if $icon == "pushpin" {
       content: "\e926";
     }
 
-    @if $icon == "spotify" {
+    @if $icon == "reddit" {
       content: "\e927";
     }
 
-    @if $icon == "steam" {
+    @if $icon == "signal" {
       content: "\e928";
     }
 
-    @if $icon == "xing" {
+    @if $icon == "spotify" {
       content: "\e929";
     }
 
-    @if $icon == "youtube" {
+    @if $icon == "steam" {
       content: "\e92a";
+    }
+
+    @if $icon == "xing" {
+      content: "\e92b";
+    }
+
+    @if $icon == "youtube" {
+      content: "\e92c";
     }
   }
 }
