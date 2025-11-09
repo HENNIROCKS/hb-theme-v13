@@ -17,6 +17,9 @@ use Kirby\Toolkit\Str;
             <?= $page->title() ?>
         </h1>
         <hr class="line" />
+        <?php if ($page->text()->isNotEmpty()): ?>
+            <?php snippet('blocks/text', ['block' => $page]) ?>
+        <?php endif ?>
         <?php snippet('blog/articles', ['articles' => $articles]) ?>
     </section>
 </main>
