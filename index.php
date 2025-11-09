@@ -5,6 +5,8 @@
  * - Make sure "hennirocks/hb-commons" is always loaded before any theme;
  *   As of now, overwriting blueprints, snippets etc. just works because
  *   of the naming of the plugins automatically puts dependencies in order.
+ *   - Require "hennirocks/hb-commons"
+ *   - Use "$kirby->option('activeTheme')" to load this theme, else don't
  */
 
 /**
