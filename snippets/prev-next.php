@@ -2,12 +2,12 @@
 
     <?php if ($page->hasPrevListed()): ?>
         <a class="prev-next__link" href="<?= $page->prevListed()->url() ?>" title='Zur Seite <?= $page->prevListed()->title() ?>'>
-            <i class="icon icon__chevron-left"></i>
+            <i class="prev-next__icon prev-next__icon--chevron-left"></i>
             <span class="sr-only">Vorherige Seite</span>
         </a>
     <?php else: ?>
         <span class="prev-next__placeholder">
-            <i class="icon icon__chevron-left"></i>
+            <i class="prev-next__icon prev-next__icon--chevron-left"></i>
         </span>
     <?php endif ?>
 
@@ -21,12 +21,12 @@
 
     <?php if ($page->hasNextListed()): ?>
         <a class="prev-next__link" href="<?= $page->nextListed()->url() ?>" title='Zur Seite <?= $page->nextListed()->title() ?>'>
-            <i class="icon icon__chevron-right"></i>
+            <i class="prev-next__icon prev-next__icon--chevron-right"></i>
             <span class="sr-only">Nächste Seite</span>
         </a>
     <?php else: ?>
         <span class="prev-next__placeholder">
-            <i class="icon icon__chevron-right"></i>
+            <i class="prev-next__icon prev-next__icon--chevron-right"></i>
         </span>
     <?php endif ?>
 
