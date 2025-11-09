@@ -1,5 +1,4 @@
 @use "../mixins/icon";
-// @use "../mixins/icons-links";
 @use "../placeholders/button";
 
 .button {
@@ -7,10 +6,6 @@
 
   &--download {
     @include icon.icon("download");
-
-    // &:before {
-    //   @include icons-links.icon("\e910");
-    // }
   }
 
   &--hexagon {
@@ -36,10 +31,6 @@
   &--more {
     @include icon.icon("plus");
     margin-top: var(--spacing-large);
-
-    // &:before {
-    //   @include icons-links.icon("\e921");
-    // }
   }
 
   &--wide {

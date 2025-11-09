@@ -1,7 +1,6 @@
 @use "../placeholders/button";
 @use "../placeholders/image";
 @use "icon";
-// @use "icons-links";
 
 @mixin articles($option) {
   .articles {
@@ -22,10 +21,6 @@
         @extend %button;
         @include icon.icon("plus");
         margin: var(--spacing-large) 0;
-
-        // &:before {
-        //   @include icons-links.icon("\e922");
-        // }
       }
     }
   }
