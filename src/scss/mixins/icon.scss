@@ -12,172 +12,176 @@
     vertical-align: middle;
 
     @if $icon == "anchor" {
-      content: "\e900";
-    }
-
-    @if $icon == "arrow-left-right" {
       content: "\e901";
     }
 
-    @if $icon == "arrow-right" {
+    @if $icon == "arrow-left-right" {
       content: "\e902";
     }
 
-    @if $icon == "arrow-right-box" {
+    @if $icon == "arrow-right" {
       content: "\e903";
     }
 
-    @if $icon == "arrow-right-box-black" {
+    @if $icon == "arrow-right-box" {
       content: "\e904";
     }
 
-    @if $icon == "arrow-right-up" {
+    @if $icon == "arrow-right-box-black" {
       content: "\e905";
     }
 
-    @if $icon == "arrow-right-up-box" {
+    @if $icon == "arrow-right-up" {
       content: "\e906";
     }
 
-    @if $icon == "arrow-right-up-box-black" {
+    @if $icon == "arrow-right-up-box" {
       content: "\e907";
     }
 
-    @if $icon == "behance" {
+    @if $icon == "arrow-right-up-box-black" {
       content: "\e908";
     }
 
-    @if $icon == "bluesky" {
+    @if $icon == "behance" {
       content: "\e909";
     }
 
-    @if $icon == "chevron-left" {
+    @if $icon == "bluesky" {
       content: "\e90a";
     }
 
-    @if $icon == "chevron-left-double" {
+    @if $icon == "check" {
+      content: "\e900";
+    }
+
+    @if $icon == "chevron-left" {
       content: "\e90b";
     }
 
-    @if $icon == "chevron-right" {
+    @if $icon == "chevron-left-double" {
       content: "\e90c";
     }
 
-    @if $icon == "chevron-right-double" {
+    @if $icon == "chevron-right" {
       content: "\e90d";
     }
 
-    @if $icon == "close" {
+    @if $icon == "chevron-right-double" {
       content: "\e90e";
     }
 
-    @if $icon == "code" {
+    @if $icon == "close" {
       content: "\e90f";
     }
 
-    @if $icon == "discord" {
+    @if $icon == "code" {
       content: "\e910";
     }
 
-    @if $icon == "download" {
+    @if $icon == "discord" {
       content: "\e911";
     }
 
-    @if $icon == "feed" {
+    @if $icon == "download" {
       content: "\e912";
     }
 
-    @if $icon == "github" {
+    @if $icon == "feed" {
       content: "\e913";
     }
 
-    @if $icon == "gitlab" {
+    @if $icon == "github" {
       content: "\e914";
     }
 
-    @if $icon == "hashtag" {
+    @if $icon == "gitlab" {
       content: "\e915";
+    }
+
+    @if $icon == "hashtag" {
+      content: "\e916";
     }
 
     @if $icon == "heart" {
       color: var(--color-salmon-500);
-      content: "\e916";
-    }
-
-    @if $icon == "linkedin" {
       content: "\e917";
     }
 
-    @if $icon == "lock-closed" {
+    @if $icon == "linkedin" {
       content: "\e918";
     }
 
-    @if $icon == "lock-open" {
+    @if $icon == "lock-closed" {
       content: "\e919";
     }
 
-    @if $icon == "login" {
+    @if $icon == "lock-open" {
       content: "\e91a";
     }
 
-    @if $icon == "logout" {
+    @if $icon == "login" {
       content: "\e91b";
     }
 
-    @if $icon == "mail" {
+    @if $icon == "logout" {
       content: "\e91c";
     }
 
-    @if $icon == "mastodon" {
+    @if $icon == "mail" {
       content: "\e91d";
     }
 
-    @if $icon == "menu" {
+    @if $icon == "mastodon" {
       content: "\e91e";
     }
 
-    @if $icon == "minus" {
+    @if $icon == "menu" {
       content: "\e91f";
     }
 
-    @if $icon == "paypal" {
+    @if $icon == "minus" {
       content: "\e920";
     }
 
-    @if $icon == "pinterest" {
+    @if $icon == "paypal" {
       content: "\e921";
     }
 
-    @if $icon == "pixelfed" {
+    @if $icon == "pinterest" {
       content: "\e922";
     }
 
-    @if $icon == "plus" {
+    @if $icon == "pixelfed" {
       content: "\e923";
     }
 
-    @if $icon == "reddit" {
+    @if $icon == "plus" {
       content: "\e924";
     }
 
-    @if $icon == "signal" {
+    @if $icon == "reddit" {
       content: "\e925";
     }
 
-    @if $icon == "spotify" {
+    @if $icon == "signal" {
       content: "\e926";
     }
 
-    @if $icon == "steam" {
+    @if $icon == "spotify" {
       content: "\e927";
     }
 
-    @if $icon == "xing" {
+    @if $icon == "steam" {
       content: "\e928";
     }
 
-    @if $icon == "youtube" {
+    @if $icon == "xing" {
       content: "\e929";
+    }
+
+    @if $icon == "youtube" {
+      content: "\e92a";
     }
   }
 }
