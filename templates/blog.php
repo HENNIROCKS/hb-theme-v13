@@ -22,11 +22,15 @@ use Kirby\Toolkit\Str;
             <?php snippet('blocks/text', ['block' => $page]) ?>
         <?php endif ?>
 
-        <?php if ($page->pinned()->isNotEmpty()): ?>
+        <?php snippet('tags/tagcloud') ?>
+
+        <?php if ($page->pinned()->isNotEmpty() && !$tag = param('tag')): ?>
             <?php snippet('blog/articles', ['articles' => $page->pinned()->toPages(), 'ajax' => false, 'class' => 'pinned']) ?>
         <?php endif ?>
 
-        <?php snippet('blog/articles', ['articles' => $articles, 'ajax' => true, 'class' => 'default']) ?>
+        <?php snippet('blog/articles', ['articles' => $articles, 'ajax' => false, 'class' => 'default']) ?>
+
+        <?php /* TODO: Add pagination later when changing limit in blog controller */ ?>
     </section>
 </main>
 

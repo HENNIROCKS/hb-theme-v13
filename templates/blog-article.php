@@ -21,7 +21,7 @@ use Kirby\Toolkit\Str;
 
         <hr class=" line" />
 
-        <?php snippet('tags', ['disabled' => true]) ?>
+        <?php snippet('tags/tags') ?>
 
         <?php snippet('layouts', ['layout_src' => $page->layouts()]) ?>
     </section>

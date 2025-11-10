@@ -2,15 +2,16 @@
 
 .banner {
   @extend %container;
-  font-size: 1.75em;
+  font-size: var(--font-size-base); // 1.75em
   font-weight: var(--text-bold);
   letter-spacing: 10px;
-  padding: 1em;
+  padding: calc(var(--spacing-base) * 2) var(--spacing-base) var(--spacing-base);
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: 2.5em;
+    padding: var(--spacing-base);
   }
 
   &__link {

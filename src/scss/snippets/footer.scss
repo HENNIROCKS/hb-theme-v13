@@ -1,3 +1,4 @@
+@use "../mixins/icon";
 @use "../placeholders/container";
 @use "../placeholders/link";
 
@@ -70,5 +71,35 @@
     @media (min-width: 768px) {
       padding: var(--spacing-larger) 0;
     }
+  }
+}
+
+.footer__link .icon {
+  &__bluesky {
+    @include icon.icon("bluesky");
+  }
+
+  &__github {
+    @include icon.icon("github");
+  }
+
+  &__linkedin {
+    @include icon.icon("linkedin");
+  }
+
+  &__mastodon {
+    @include icon.icon("mastodon");
+  }
+
+  &__paypal {
+    @include icon.icon("paypal");
+  }
+
+  &__spotify {
+    @include icon.icon("spotify");
+  }
+
+  &__steam {
+    @include icon.icon("steam");
   }
 }
