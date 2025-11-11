@@ -12,6 +12,7 @@
 
     &--active {
       background-color: var(--color-link);
+      border-color: var(--color-link);
       color: initial;
     }
 
@@ -28,6 +29,11 @@
           color: var(--color-text-darkmode-contrast);
         }
       }
+    }
+
+    &--reset {
+      background-color: transparent;
+      color: inherit;
     }
   }
 
