@@ -17,7 +17,7 @@ Kirby::plugin('hennirocks/hb-theme-v13', [
             }
         }
     ],
-    'blueprints' => Helpers::mapFiles(__DIR__, 'blueprints', ['yml', 'yaml']),
+    'blueprints' => Helpers::mapFiles(__DIR__, 'blueprints', ['yml']),
     'snippets'   => Helpers::mapFiles(__DIR__, 'snippets', ['php']),
     'templates'  => Helpers::mapFiles(__DIR__, 'templates', ['php']),
 ]);
