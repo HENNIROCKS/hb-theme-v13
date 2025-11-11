@@ -53,6 +53,8 @@ $theme = option('activeTheme');
 
     <?php snippet('stoerer') ?>
 
+    <a style="display: none" href="https://mastodon.social/@hennirocks_designer" rel="me">Mastodon</a>
+
     <?= js('media/plugins/' . $theme . '/js/script.min.js') ?>
 
 </body>
