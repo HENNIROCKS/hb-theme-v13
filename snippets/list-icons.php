@@ -13,7 +13,7 @@ use Kirby\Toolkit\Str;
         <?php if ($link->display()->toBool() === true) : ?>
             <li class="<?= $class ?>__list-item">
                 <a class="<?= $class ?>__link" href="<?= $link->url() ?>" rel="<?= $link->rel() ?>" target="_blank" title="Weiter zu <?= $link->name() ?>">
-                    <i class="icon icon__<?= Str::lower($link->name()) ?>"></i>
+                    <i class="<?= $class ?>__icon <?= $class ?>__icon--<?= Str::lower($link->name()) ?>"></i>
                     <span class="sr-only"><?= $link->name() ?></span>
                 </a>
             </li>
