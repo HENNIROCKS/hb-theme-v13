@@ -1,10 +1,10 @@
 {
   "name": "hennirocks/hb-theme-v13",
-  "description": "",
+  "description": "A personal theme to extend my 'commons' plugin",
   "license": "MIT",
   "type": "kirby-plugin",
   "version": "0.1",
-  "homepage": "https://github.com/HENNIROCKS",
+  "homepage": "https://github.com/HENNIROCKS/hb-theme-v13",
   "authors": [
     {
       "name": "Hendrik Berends",
