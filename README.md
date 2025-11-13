@@ -2,14 +2,14 @@
 
 This is the theme for the 13th version of my personal website [hendrik-berends.de](https://hendrik-berends.de).
 
-![Alt text](./assets/images/mockup-hbthemev13.png)
+![Alt text](./assets/images/mockup-hbthemev13.jpeg)
 
 ## Important notes
 
 This theme does not work out of the box and is basically a repository for front end only. It is intended to be used with a Kirby plainkit as well as my own plugin `hb-commons`:
 
--   [kirby](https://github.com/getkirby/plainkit)
--   [hb-commons](https://github.com/HENNIROCKS)
+- [kirby](https://github.com/getkirby/plainkit)
+- [hb-commons](https://github.com/HENNIROCKS)
 
 Also note that the styles are built in SCSS and thus need compiling by installing [Sass](https://www.npmjs.com/package/sass). Check out `package.json` for all required dependencies and available commands.
 
