@@ -17,20 +17,21 @@ use Kirby\Toolkit\Str;
             <?= $page->title() ?>
         </h1>
         <hr class="line" />
+        <div class="layouts">
+            <?php if ($page->text()->isNotEmpty()): ?>
+                <?php snippet('blocks/text', ['block' => $page]) ?>
+            <?php endif ?>
 
-        <?php if ($page->text()->isNotEmpty()): ?>
-            <?php snippet('blocks/text', ['block' => $page]) ?>
-        <?php endif ?>
+            <?php snippet('tags/tagcloud') ?>
 
-        <?php snippet('tags/tagcloud') ?>
+            <?php if ($page->pinned()->isNotEmpty() && !$tag = param('tag')): ?>
+                <?php snippet('blog/articles', ['articles' => $page->pinned()->toPages(), 'ajax' => false, 'class' => 'pinned']) ?>
+            <?php endif ?>
 
-        <?php if ($page->pinned()->isNotEmpty() && !$tag = param('tag')): ?>
-            <?php snippet('blog/articles', ['articles' => $page->pinned()->toPages(), 'ajax' => false, 'class' => 'pinned']) ?>
-        <?php endif ?>
+            <?php snippet('blog/articles', ['articles' => $articles, 'ajax' => false, 'class' => 'default']) ?>
 
-        <?php snippet('blog/articles', ['articles' => $articles, 'ajax' => false, 'class' => 'default']) ?>
-
-        <?php /* TODO: Add pagination later when changing limit in blog controller */ ?>
+            <?php /* TODO: Add pagination later when changing limit in blog controller */ ?>
+        </div>
     </section>
 </main>
 
